@@ -19,6 +19,16 @@ def getAPIKey():
         raise Exception(f"No api key found in environment:{HuggingFace_API_Env_key}")
     return API_Key
 
+"""
+**************************
+Type of response object: <class 'requests.models.Response'>
+Type of Headers: <class 'requests.structures.CaseInsensitiveDict'>
+Type of payload: <class 'str'>
+
+If JSON, it can be a list of jsons
+Returns a list of dictionaries
+**************************
+"""
 def queryModel(prompt, parameters):
     apiKey = getAPIKey()
     headers = {"Authorization": f"Bearer {apiKey}"}
@@ -68,7 +78,8 @@ def testModel():
     params = getParameters()
     response: requests.Response = queryModel(prompt,params)
     response.raise_for_status()
-    print(response)
+    answer: str = http.getHFSingleGeneratedText(response)
+    log.ph("Final Answer", answer)
 
 def testAPIKey():
     s = getAPIKey()
