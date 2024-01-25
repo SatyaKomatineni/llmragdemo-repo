@@ -1,5 +1,8 @@
+Filename: streamlit-ui-requirements.txt
+A file to guide ChatGPT based development
+
 **********************************
-Requirement 1: for ChatGPT
+Requirement 1: for ChatGPT: Create a webpage with a from submission
 **********************************
 What I want:
 

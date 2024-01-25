@@ -1,0 +1,16 @@
+
+#
+# filename: streamlit-ui-requirements.txt
+#
+
+# Requirements set 1
+Write a streamlit page in python that does the following
+
+1. Create a form with one text entry field
+2. Create a submit button 
+3. Clicking on It should call a python function with the text box text as input. Call this function "processInput"
+4. I want to create string variable that keeps its state between invocations of the webpage. Say that variable totalResponseText
+5. In the processInput function append the input text to the string that is stored in the state variable
+6. Write the totalResponseText to the output
+7. Write the code as a set of functions for modularity where possible
+
