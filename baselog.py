@@ -50,6 +50,11 @@ def uph1(h: str):
     print(f"\n{h}")
     print("***********************")
 
+def uph(h: str,m: object):
+    print(f"\n{h}")
+    print("***********************")
+    print(f"{m}")
+
 def ph1(h: str):
     dprint(f"\n{h}")
     dprint("***********************")

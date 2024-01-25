@@ -13,8 +13,20 @@ def initialize():
     nlpmodel = spacy.load("en_core_web_sm")
 
 def getSentences(paragraph: str):
+    global nlpmodel
     doc = nlpmodel(paragraph)
     return [sent for sent in doc.sents]
+
+def getAtMostSentences(sentenceList, max):
+    s: str = ""
+    count = 0
+    for sent in sentenceList:
+        if count == max:
+            return s
+        s = f"{s} {sent}"
+        count = count + 1
+    return s
+
 
 def testGetSentences():
     text = "sentence 1. Sentence 2. Sent"
