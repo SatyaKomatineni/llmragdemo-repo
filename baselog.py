@@ -23,19 +23,40 @@ None
 # Functions
 #**********************************************
 
+global_debug = True
+
+def turnOffDebug():
+    global global_debug
+    global_debug = False
+
+    
+def dprint(text: str):
+    if global_debug == False :
+        return
+    print(text)
+
+def p(text: str):
+    dprint(f"{text}")
+
 def ph(h: str,m: object):
-    print(f"\n{h}")
-    print("***********************")
-    print(f"{m}")
+    dprint(f"\n{h}")
+    dprint("***********************")
+    dprint(f"{m}")
 
 def ptype(context: str, o: object):
-    print(f"Type of {context}:\n{type(o)}")
+    dprint(f"Type of {context}:\n{type(o)}")
 
-def ph1(h: str):
+def uph1(h: str):
     print(f"\n{h}")
     print("***********************")
 
+def ph1(h: str):
+    dprint(f"\n{h}")
+    dprint("***********************")
 
+def prompt(text: str) -> str:
+    return input(f"\n> {text}")
+    
 def localTest():
     ph1("Starting local test")
     hello = "hello"

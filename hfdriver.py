@@ -89,8 +89,7 @@ def test():
     #log.ph("hello", "hello")
     testModel()
     
-def main():
-    test()
-
 #run
 main()
+if __name__ == '__main__':
+    test()

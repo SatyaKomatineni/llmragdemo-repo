@@ -1,0 +1,16 @@
+**********************************
+Requirement 1: for ChatGPT
+**********************************
+What I want:
+
+1. Create a function
+2. it should prompt the user on command line with a prompt
+3. Gather the prompt from user
+4. If the prompt is empty exit the program
+5. if the prompt is "q" or "quit" exactly exit the program
+6. call a function to process the prompt. Call this function "processPrompt"
+7. Put all this in a while loop
+8. Call the function "executePromptLoop"
+
+Assume:
+1. To write code modularly
