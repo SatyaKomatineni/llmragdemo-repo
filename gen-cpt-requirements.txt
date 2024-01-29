@@ -1,0 +1,122 @@
+
+# Requirement set 1
+# Work with Shakespeare data set
+
+Write me 3 python functions.
+
+The first one. Write me a python function that does the following
+
+1. retrieves and installs a Shakespeare data set
+2. Parses the data set into a dictionary with the following keys and values
+    3. Sonnet number is the key
+    4. Sonnet english text is the value (as a string)
+5. return that dictionary as an output of the function
+6. Choose an appropriate library to do this
+7. Also include in your advise what needs to be imported and how to download the dataset
+
+Then write me a second function to do the following
+
+1. Take the dictionary from the previous function as an input
+2. Use chromadb as a persistent client
+3. Save the sonnet text as a text input so that chromadb can store its embeddings so the sonnet can be retrieved later via a vector search
+4. Store the sonnet number as the metadata in 2 fields both as an integer and a string like "Sonnet 17" while saving it in chromadb
+5. Write a test function to count the number of sonnets stored in chromadb
+6. Advise any necessary imports and downloads
+
+Then write me a third function to do the following
+
+1. Given a text query locate the matching sonnets and return them as a dictionary of sonnet number and the sonnet
+3. Write a test function to test it with the following test query "Locate Sonnet 17 for me"
+
+
+Try 2
+************************
+Write me a python function that does the following
+
+1. retrieves and installs a Shakespeare data set using nltk and nltk.download
+2. Parses the data set into a dictionary with the following keys and values
+    3. Sonnet number is the key
+    4. Sonnet english text is the value (as a string)
+5. return that dictionary as an output of the function
+6. Choose an appropriate library to do this
+7. Also include in your advise what needs to be imported and how to download the dataset
+
+
+validation stuff
+*************************
+write me a function to validate the input parameters so that they are not null or empty strings
+
+1. Should take multiple args
+2. validate each org so that it is not
+    3. not null or none
+    4. if it is a string object it is not an empty string
+5. if any org fails raise an exception as follows
+    6. "The specified Argument x cannot be null or empty" where the "x" is the name of the argument
+
+
+Examine a string
+**********************
+write me a function to examine large strings
+
+1. Take 2 inputs, the text string and max length to display
+2. Report if the string is empty or none
+3. Report the size of the string
+4. Report first "max_length" characters of the string
+
+
+Extract sonnets
+********************
+
+Can you write code with regex in python for the following
+
+1. to extract the list of text segments that are between the lines of roman numerals as shown in the example below
+2. replace the roman numeral with "Sonnet X" where X is the number representing the roman numeral
+3. There can be as many as 200 segments like this
+
+The Example large text string follows:
+
+I
+
+When forty winters shall beseige thy brow,
+And dig deep trenches in thy beauty's field,
+
+II
+
+When forty winters shall beseige thy brow,
+And dig deep trenches in thy beauty's field,
+
+III
+
+When forty winters shall beseige thy brow,
+And dig deep trenches in thy beauty's field,
+
+Regex
+**************
+
+I need some help with regex.
+
+Consider the following text in double quotes:
+
+
+"
+I
+
+When forty winters shall beseige thy brow,
+And dig deep trenches in thy beauty's field,
+
+II
+
+When forty winters shall beseige thy brow,
+And dig deep trenches in thy beauty's field,
+
+III
+
+When forty winters shall beseige thy brow,
+And dig deep trenches in thy beauty's field,
+
+"
+I want a regular expression that matches the lines 
+a. that have single words in them 
+b. Those words are a roman numeral
+c. The roman numerals may be as large as 150 or more
+d. It is quite ok if they match approximately as long as they are the only word on that line
