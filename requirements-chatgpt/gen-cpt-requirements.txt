@@ -1,5 +1,30 @@
+******************************************************
+# Chromadb set: 1/29/24
+******************************************************
+Main Goal:
+1. install it (complete)
+2. store text
+3. Retrieve text
 
+Store/retrieve
+******************************************************
+1. locate chromadb docs
+2. getting started page
+
+requirements:
+
+I need help with python code to work with chromadb. the details are below:
+
+1. write me python code for chromadb to store and retrieve text segments
+2. I want to use a local file to store the database
+3. I want to use the builtin vectorizer
+4. Show me what I need to import
+5. Make the code modularized and keep it in well organized functions
+
+
+******************************************************
 # Requirement set 1
+******************************************************
 # Work with Shakespeare data set
 
 Write me 3 python functions.

@@ -29,6 +29,10 @@ def testFileRoots():
     log.ph("Sonnets dir:", getSonnetsRoot())
     log.ph("Small sonnets file:", getSonnetFilepath("small-sonnets.txt"))
 
+def getTempDataRoot():
+    return os.path.join(getDataRoot(),"tempdata")
+
+
 """
 ***********************************
 writing to files
