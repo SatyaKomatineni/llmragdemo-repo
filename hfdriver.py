@@ -6,6 +6,7 @@ import httputils as http
 HuggingFace_API_Env_key = "HUGGINGFACE_API_KEY"
 #API_URL = "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta" 
 API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
+FB_API_URL ="https://z8dvl7fzhxxcybd8.eu-west-1.aws.endpoints.huggingface.cloud/"
 
 def getEnvVariable(name, default):
     value = os.environ[name] 
