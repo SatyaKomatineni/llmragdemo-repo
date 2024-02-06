@@ -19,6 +19,9 @@ def getAPIKey():
         raise Exception(f"No api key found in environment:{HuggingFace_API_Env_key}")
     return API_Key
 
+def getSampleHFEndPoint():
+    return "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
+    
 """
 **************************
 Type of response object: <class 'requests.models.Response'>

@@ -72,6 +72,18 @@ def testReadFile():
     r = read_text_file(filename)
     log.dprint(r)
 
+
+"""
+***********************************
+General utilities
+***********************************
+"""
+def getEnvVariable(name, default):
+    value = os.environ[name] 
+    if value == None:
+        return default
+    return value
+
 def localTest():
     log.ph1("Starting local test")
     #testSaveToFile()

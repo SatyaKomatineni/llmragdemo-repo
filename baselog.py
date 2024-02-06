@@ -70,6 +70,18 @@ def prompt(text: str) -> str:
     return input(f"\n> {text}")
 
 #**********************************************
+# log classification
+#**********************************************
+def warn(m: str):
+    dprint(f"warn: {m}")
+
+def trace(m: str):
+    dprint(f"trace: {m}")
+    
+def info(m: str):
+    dprint(f"info: {m}")
+
+#**********************************************
 # Validation functions
 #**********************************************
 
