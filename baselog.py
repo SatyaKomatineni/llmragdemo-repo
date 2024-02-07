@@ -24,12 +24,13 @@ Backlog:
 #**********************************************
 # Define module-level variables and constants here
 #**********************************************
-None
+#None
 
 #**********************************************
 # Functions
 #**********************************************
 
+import regex as re
 global_debug = True
 
 def turnOffDebug():
